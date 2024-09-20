@@ -33,8 +33,8 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF3E0] text-[#4A4A4A]"> {/* Softer beige background */}
-      <header className="bg-[#6F4C3E] p-8 rounded-b-xl shadow-lg"> {/* Rich brown with rounded bottom */}
+    <div className="min-h-screen bg-[#FAF3E0] text-[#4A4A4A]"> 
+      <header className="bg-[#6F4C3E] p-8 rounded-b-xl shadow-lg"> 
         <h1 className="text-5xl font-serif text-center text-[#F0E4D2]">Museum Ticketing System</h1>
         <p className="text-center mt-2 text-lg text-[#F0E4D2] font-light">
           Seamless ticket booking, powered by AI Chatbot
@@ -45,7 +45,6 @@ const Home = () => {
         <MuseumSlider />
         <MuseumSliderNearYou />
 
-        {/* Chatbot Integration */}
         <section className="mt-10 relative">
           <button
             onClick={toggleChat}
@@ -54,7 +53,6 @@ const Home = () => {
             <ChatIcon className="h-6 w-6" />
           </button>
 
-          {/* Chatbot Window */}
           {isChatOpen && (
             <div className="fixed bottom-20 right-5 bg-white w-80 h-96 shadow-2xl border border-[#8B5E3C] rounded-xl overflow-hidden">
               <div className="bg-[#8B5E3C] text-white p-4 flex justify-between items-center rounded-t-xl">

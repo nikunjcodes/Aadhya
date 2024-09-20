@@ -7,7 +7,7 @@ const Chatbot = () => {
   const handleMessageSend = () => {
     const botResponse = "Welcome! How can I assist you in booking a museum ticket?";
     setResponse(botResponse);
-    setMessage(''); // Clear the input after sending
+    setMessage(''); 
   };
 
   return (
